@@ -5,4 +5,10 @@ import Foundation
         print(value)
         return value
     }
+    
+    @objc public func getAvailableMemory() -> UInt64 {
+        let processInfo = ProcessInfo.processInfo
+        let availableMemory = processInfo.physicalMemory
+        return availableMemory
+    }
 }

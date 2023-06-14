@@ -15,4 +15,10 @@ public class PreviewMemoryPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+    
+    @objc func getAvailableMemory(_ call: CAPPluginCall) {
+        call.resolve([
+            "value": implementation.getAvailableMemory()
+        ])
+    }
 }

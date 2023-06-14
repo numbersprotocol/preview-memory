@@ -7,4 +7,7 @@ export class PreviewMemoryWeb extends WebPlugin implements PreviewMemoryPlugin {
     console.log('ECHO', options);
     return options;
   }
+  async getAvailableMemory(): Promise<{ value: number }> {
+    throw new Error('Method not implemented.');
+  }
 }
