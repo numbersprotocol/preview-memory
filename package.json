@@ -1,6 +1,6 @@
 {
   "name": "@numbersprotocol/preview-memory",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get the available memory of Android and iOS devices",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
